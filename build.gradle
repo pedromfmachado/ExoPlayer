@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 buildscript {
+    ext.kotlin_version = '1.2.41'
     repositories {
         jcenter()
         google()
@@ -19,6 +20,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.0'
         classpath 'com.novoda:bintray-release:0.8.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
     // Workaround for the following test coverage issue. Remove when fixed:
     // https://code.google.com/p/android/issues/detail?id=226070
